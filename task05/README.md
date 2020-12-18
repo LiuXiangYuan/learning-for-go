@@ -25,3 +25,12 @@ C语言中字符串是通过\0来标识字符串的结束，而go语言中是通
 - var buf bytes.Buffer -> buf.WriteString(str)
 - var builder strings.Builder -> builder.WriteString(str)
 其中strings.Builder拼接字符串是最高效的。
+
+#### 基准测试
+参考: http://c.biancheng.net/view/124.html
+
+使用如下命令行开启基准测试
+```
+go test -v -bench=. benchmark_test.go
+```
+注意：Windows 下使用 go test 命令行时，`-bench=.`应写为`-bench="`.
