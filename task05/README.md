@@ -33,4 +33,4 @@ C语言中字符串是通过\0来标识字符串的结束，而go语言中是通
 ```
 go test -v -bench=. benchmark_test.go
 ```
-注意：Windows 下使用 go test 命令行时，`-bench=.`应写为`-bench="`.
+注意：Windows 下使用 go test 命令行时，`-bench=.`应写为`-bench="."`。
